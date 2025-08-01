@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+*.env
+
+# Docker
+*.log
+*.pid
+
+# Sensitive data
+workout_data.json  # Exclude if you don't want to push sensitive data; back up separately
+# Backup files (e.g., workout_data_backup_*.json)
+workout_data_backup_*

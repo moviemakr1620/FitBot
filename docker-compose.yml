@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  workout-bot:
+    build: .
+    image: workout-bot
+    container_name: workout-bot
+    restart: always
+    volumes:
+      - ./workout_data.json:/app/workout_data.json
+    env_file:
+      - .env
+    environment:
+      - TIMEZONE=${TIMEZONE}
