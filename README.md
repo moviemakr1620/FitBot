@@ -6,8 +6,8 @@ This Discord bot helps groups set shared workout goals, track progress, claim re
 ### 1. Clone the Repository
 - Install Git: `sudo apt update && sudo apt install git`
 - Clone:
-  git clone https://github.com/moviemakr1620/FitBot.git
-  cd FitBot
+  `git clone https://github.com/moviemakr1620/FitBot.git`
+  `cd FitBot`
 
 ### 2. Install Docker and Docker Compose
 - Docker: `sudo apt update && sudo apt install docker.io`
@@ -16,7 +16,7 @@ This Discord bot helps groups set shared workout goals, track progress, claim re
 
 ### 3. Configure
 - Copy the example .env file and rename it:
-  cp .env.example .env
+  `cp .env.example .env`
 - Edit .env:
   DISCORD_TOKEN=your_discord_bot_token_here
   TIMEZONE=America/New_York
@@ -31,15 +31,15 @@ This Discord bot helps groups set shared workout goals, track progress, claim re
 
 ### 4. Build and Run
 - Using Docker Compose:
-  docker-compose up -d --build
-- Logs: docker-compose logs -f
-- Stop: docker-compose down
+  `docker-compose up -d --build`
+- Logs: `docker-compose logs -f`
+- Stop: `docker-compose down`
 
 ### 5. Updating the Bot
 - Pull updates from GitHub:
-  git pull
+  `git pull`
 - Rebuild and redeploy:
-  docker-compose up -d --build
+  `docker-compose up -d --build`
 - Check logs for errors.
 
 ## User Guide
